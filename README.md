@@ -69,14 +69,13 @@ portscout -p 22,80,443 -rate 100 10.0.0.0/24
 # Save CSV for a spreadsheet
 portscout -p top -format csv -o results.csv 192.168.1.10
 ```
-
-Illustrative output (yours will differ):
+Example output (scanning localhost with a test web server running):
 
 ```
-HOST          PORT  STATE  SERVICE  LATENCY  BANNER
-192.168.1.10  22    open   ssh      1.2ms    SSH-2.0-OpenSSH_9.6
-192.168.1.10  80    open   http     1.8ms    HTTP/1.1 200 OK | Server: nginx/1.24.0
-192.168.1.10  443   open   https    2.1ms    TLS 1.3, CN=example.local
+HOST       PORT  STATE  SERVICE   LATENCY  BANNER
+127.0.0.1  135   open   msrpc     10.6ms
+127.0.0.1  445   open   smb       9.9ms
+127.0.0.1  8000  open   http-alt  9.9ms    HTTP/1.0 200 OK | Server: SimpleHTTP/0.6 Python/3.13.15
 ```
 
 ## How it works
