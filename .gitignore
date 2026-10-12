@@ -1,0 +1,16 @@
+# Binaries
+/portscout
+/portscout.exe
+/dist/
+
+# Test / coverage output
+*.out
+coverage.html
+
+# Scan results
+results.*
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
